@@ -1,0 +1,18 @@
+.switch-button {
+    width: 90%;
+    height: 7%;
+    margin: 5%;
+    background-color: white;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+}
+
+@keyframes success-animation {
+    0%   {background-color: #99ee99;}
+    100% {background-color: white;}
+}
+
+.success {
+    animation-name: success-animation;
+    animation-duration: 1s;
+}
