@@ -1,4 +1,5 @@
 import http from 'http';
+
 import express from 'express';
 import bodyParser from 'body-parser';
 import api from './api';
@@ -14,5 +15,6 @@ app.use(bodyParser.json({
 
 app.use('/api', api());
 
-app.server.listen(process.env.PORT || 9000);
-console.log(`Started on port ${app.server.address().port}`);
+app.server.listen(process.env.PORT || 8888, function() {
+	console.log(`Started on port ${app.server.address().port}`);
+});
