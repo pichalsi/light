@@ -9,6 +9,13 @@
         <title>Light</title>
     </head>
 <body>
-    <button id="switch" type="button" class="switch-button">Switch</button>
+  {{#devices}}
+  <h4>{{name}}</h4>
+  <div class="buttonbar">
+    <button id="toggle-{{index}}" type="button" class="_button switch-button">Toggle</button>
+    <button id="on-{{index}}" class="_button switch-button-half">On</button>
+    <button id="off-{{index}}" class="_button switch-button-half">Off</button>
+  </div>
+  {{/devices}}
 </body>
 </html>

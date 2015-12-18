@@ -20,6 +20,8 @@
   "dependencies": {
     "body-parser": "^1.14.1",
     "express": "^4.13.3",
-    "rcswitch": "^0.2.3"
+    "hjs": "0.0.6",
+    "rcswitch": "^0.2.3",
+    "winston": "^2.1.1"
   }
 }
