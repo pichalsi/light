@@ -9,7 +9,7 @@ import path from 'path';
 var app = express();
 app.server = http.createServer(app);
 
-app.set('views', path.join(__dirname, 'views'));
+app.set('views', path.join(__dirname, '../views'));
 app.set('view engine', 'hjs');
 
 app.use(express.static('public'));
